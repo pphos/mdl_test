@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>Dummy情報基盤センター</title>
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css" />
+
+  <link rel="stylesheet" href="./assets/plugin/slick/slick.css">
+  <link rel="stylesheet" href="./assets/plugin/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+    <header class="hp-header mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <h1 class="hp-title mdl-layout__title">
+            <span>Dummy</span><span>情報基盤センター</span>
+        </h1>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="hp-header-spacer mdl-layout-spacer"></div>
+        <div class="hp-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+            <i class="material-icons">search</i>
+          </label>
+          <!-- 検索ができる予定 -->
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search-field" placeholder="Search">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2段ナビゲーション (large screen only(1024px ~))-->
+      <div class="hp-navigation-wrap mdl-layout--large-screen-only">
+        <div class="hp-navigation-row mdl-layout__header-row">
+          <nav class="hp-navigation-secondary mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link" href="">学生の方</a>
+            <a class="mdl-navigation__link" href="">教職員の方</a>
+            <a class="mdl-navigation__link" href="">一般の方</a>
+          </nav>
+        </div>
+        <div class="hp-navigation-row mdl-layout__header-row">
+          <nav class="hp-navigation-primary mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link current" href="">ホーム</a>
+            <a class="mdl-navigation__link" href="">提供サービス</a>
+            <a class="mdl-navigation__link" href="">よくある質問</a>
+            <a class="mdl-navigation__link" href="">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="hp-drawer mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <a href="#" class="mdl-navigation__link">ホーム</a>
+        <a href="#" class="mdl-navigation__link">提供サービス</a>
+        <a href="#" class="mdl-navigation__link">よくある質問</a>
+        <a href="#" class="mdl-navigation__link">お問い合わせ</a>
+
+        <!-- アコーディオン -->
+        <dl class="hp-accordion">
+          <dt><span class="mdl-navigation__link">利用者別案内</span></dt>
+          <dd>
+            <a href="#" class="mdl-navigation__link">はじめての方</a>
+            <a href="#" class="mdl-navigation__link">学生の方</a>
+            <a href="#" class="mdl-navigation__link">教職員の方</a>
+            <a href="#" class="mdl-navigation__link">一般の方</a>
+          </dd>
+          <dt><span class="mdl-navigation__link">システム関係サービス</span></dt>
+          <dd>
+            <a href="#" class="mdl-navigation__link">全学認証システム利用者ID・パスワード</a>
+            <a href="#" class="mdl-navigation__link">全学ポータルサイト 権限設定管理</a>
+            <a href="#" class="mdl-navigation__link">共用ファイルサーバ</a>
+          </dd>
+          <dt><span class="mdl-navigation__link">ネットワーク関係サービス</span></dt>
+          <dd>
+            <a href="#" class="mdl-navigation__link">有線ネットワークの接続について</a>
+            <a href="#" class="mdl-navigation__link">VPN接続</a>
+            <a href="#" class="mdl-navigation__link">無線LAN</a>
+            <a href="#" class="mdl-navigation__link">その他</a>
+          </dd>
+          <dt><span class="mdl-navigation__link">メール関係サービス</span></dt>
+          <dd>
+            <a href="#" class="mdl-navigation__link">電子メール(教職員向け)</a>
+            <a href="#" class="mdl-navigation__link">Dummyメール(学生向け)</a>
+            <a href="#" class="mdl-navigation__link">メーリングリスト(職員向け)</a>
+          </dd>
+          <dt><span class="mdl-navigation__link">教育向けサービス</span></dt>
+          <dd>
+            <a href="#" class="mdl-navigation__link">授業用PC教室</a>
+            <a href="#" class="mdl-navigation__link">自習用PCルーム</a>
+          </dd>
+        </dl>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <a name="top"></a>
+      <div class="hp-card-container mdl-grid">
+        <!-- slideshow -->
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--hide-phone mdl-shadow--4dp">
+          <ul class="slider">
+            <li><a href="#"><img src="https://placehold.jp/1600x350.png"></a></li>
+            <li><a href="#"><img src="./assets/images/inoue_001.jpg"></a></li>
+          </ul>
+        </div>
+        <!-- end slideshow -->
+
+        <!-- はじめての方 -->
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+          <h4 class="hp-section-title mdl-cell mdl-cell--12-col">はじめての方へ</h4>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  Dummy情報基盤センターは, 個人的にMaterial Design Lite で遊んでみたテストページです。
+                  ただ、各項目にはそれっぽい言葉を並べています。
+                </div>
+                <div class="mdl-card__actions">
+                  <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end はじめての方 -->
+
+        <!-- 利用別案内 -->
+        <div class="hp-content-needs-wrap mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--hide-phone">
+          <!-- デスクトップでは3列表示にする -->
+          <div class="list-wrapper">
+            <h4 class="hp-section-title mdl-cell mdl-cell--12-col">よくある質問</h4>
+            <ul class="mdl-list">
+            <div class="hp-content-needs mdl-grid">
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                    Web認証できません
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                  <span class="mdl-list__item-primary-content">
+                    研究室で新しく買ったプリンタが使えません
+                  </span>
+                </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                  <span class="mdl-list__item-primary-content">
+                    リモートアクセスできません
+                  </span>
+                </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+                  全学認証のパスワードを忘れました
+                </span>
+              </li>
+            </div>
+          </ul>
+          </div>
+        </div>
+        <!-- end 利用別案内 -->
+
+        <!-- Information -->
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+          <h4 class="hp-section-title mdl-cell mdl-cell--12-col">お知らせ</h4>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="hp-content-primary mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="hp-content-primary-left">
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム1</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム2</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム3</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                </div>
+                <div class="hp-content-primary-right mdl-cell--hide-tablet mdl-cell--hide-phone">
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム4</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム5</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                  <div class="section__text">
+                    <a href="#">
+                      <span class="section-content-title">
+                        <h5>認証システム6</h5>
+                        <time datatime="2017-3-27">2017年3月27日</time>
+                      </span>
+                      新ネットワークへの接続方法について
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end Information -->
+
+        <!-- trouble -->
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+          <!--   リストをカード風に表現 -->
+          <h4 class="hp-section-title mdl-cell mdl-cell--12-col">障害情報</h4>
+          </style>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>認証システム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+
+                    アカウント管理システム・認証システム連携の障害について
+                  </a>
+
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>認証システム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                  【復旧済】アカウント管理システムの障害について
+                </a>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>認証システム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    【復旧済】 パスワード変更サイトの認証エラー
+                  </a>
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end trouble -->
+
+        <!-- maintenance -->
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+          <h4 class="hp-section-title mdl-cell mdl-cell--12-col">メンテナンス</h4>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>情報セキュリティ対策</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    情報セキュリティ e-Learning のサービス一時停止について
+                  </a>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>教育用コンピュータシステム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    【教育用システム】システム保守に伴うサービス停止について(2/28)
+                  </a>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>教育用コンピュータシステム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    【教育用システム】緊急のシステム保守に伴うサービス停止について(12/21)
+                  </a>
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end maintenance -->
+
+        <!-- security -->
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+          <h4 class="hp-section-title mdl-cell mdl-cell--12-col">セキュリティ対策</h4>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>情報セキュリティ対策</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    情報セキュリティ e-Learning のサービス一時停止について
+                  </a>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>教育用コンピュータシステム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                  【教育用システム】システム保守に伴うサービス停止について(2/28)
+                  </a>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <a href="#">
+                    <span class="section-content-title">
+                      <h5>教育用コンピュータシステム</h5>
+                      <time datetime="2017-3-27">2017年3月27日</time>
+                    </span>
+                    【教育用システム】緊急のシステム保守に伴うサービス停止について(12/21)
+                  </a>
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end security -->
+
+        <!-- service -->
+        <ul class="hp-service mdl-list mdl-grid mdl-cell--hide-phone">
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+            <a href="#">
+              <span class="tt mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-avatar">person</i>
+                <span>全学認証システム利用者ID・パスワード</span>
+              </span>
+            </a>
+          </li>
+
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+            <a href="#">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-avatar">person</i>
+                <span>全学ポータルサイト 権限設定管理</span>
+              </span>
+            </a>
+          </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+            <a href="#">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-avatar">person</i>
+                <span>ソフトウェアの利用</span>
+              </span>
+            </a>
+          </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+                <a href="#">
+                  <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">local_post_office</i>
+                  <span>電子メール（教職員向け）</span>
+                  </span>
+                </a>
+              </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+            <a href="#">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-avatar">local_post_office</i>
+                <span>Dummyメール（学生向け）</span>
+              </span>
+            </a>
+          </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+                <a href="#">
+                  <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">headset</i>
+                  <span>情報倫理デジタルビデオ</span>
+                  </span>
+                </a>
+              </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+                <a href="#">
+                  <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">laptop_mac</i>
+                  <span>自習用PCルーム<span>
+                  </span>
+                </a>
+              </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+                <a href="#">
+                  <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">laptop_mac</i>
+                  <span>授業用PC教室<span>
+                  </span>
+                </a>
+              </li>
+          <li class="mdl-list__item mdl-cell--4-col mdl-shadow--3dp">
+            <a href="#">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">folder_shared</i>
+                  <span>共用ファイルサーバ</span>
+                  </span>
+                </a>
+              </li>
+        </ul>
+        <!-- end service -->
+      </div>
+      <!-- end hp-container -->
+      <!-- footer -->
+      <footer class="hp-footer mdl-mega-footer">
+        <div class="mdl-footer--top-section">
+          <div class="mdl-mega-footer--right-section">
+            <a class="mdl-typography--font-light" href="#top">
+              ページトップへ
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+        <div class="mdl-mega-footer--middle-section">
+          <p class="mdl-typography--font-light">Dummy情報基盤センター</p>
+          <div class="hp-footer-link">
+            <a href="#">アクセス</a>
+            <a href="#">サイトポリシー</a>
+            <a href="#">プライバシーポリシー</a>
+          </div>
+        </div>
+        <div class="mdl-footer--bottom-section">
+          <p class="copyright"><small>&copy; 2017 pphos Dummy site</small></p>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </main>
+  </div>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./assets/plugin/slick/slick.min.js"></script>
+  <script>
+    (function($){
+      //accordion menu
+      $(".hp-accordion dt").on("click", function() {
+        $(this).next().slideToggle();
+      });
+
+      //虫眼鏡フォーカス時のアニメーション
+
+      //slider animationの指定
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3500,
+        fade: true
+      });
+    })(jQuery);
+  </script>
+</body>
+
+</html>
